@@ -1,0 +1,102 @@
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color;
+  }
+
+
+html,
+body {
+    font-family: $font-family;
+    font-size: $font-12;
+    color: $color-text;
+    overflow-x: hidden;
+}
+
+.container {
+   @include container();
+}
+
+
+.title {
+    @include transition ();
+
+    padding: $p-2;
+
+    font-size: $font-48;
+    font-weight: $font-w-700;
+
+    // text-decoration: underline;
+    text-align: left;
+    
+    letter-spacing: .5rem;
+    color: $color-text;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-purple;
+    }
+
+    &-section {
+        padding: $p-2;
+
+        color: $color-text;
+        font-size: $font-24;
+        text-align: left;
+    }
+
+    &-description {
+        padding: 0 $p-0-5;
+        color: $color-text;
+        font-size: $font-12;
+        text-align: left;  
+    }
+}
+
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    padding: 2rem;
+  } 
+
+
+  .image {
+    width: 100%;
+}
+
+.pt-2 {
+    padding-top: $p-2;
+}
+
+
+
+.list {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+}
+
+.link {
+    text-decoration: overline;
+    color: white;
+    font-size: 14px;
+
+    transition: all .5s;
+}
+
+
+.main {
+    padding: $p-2 0;
+    margin: $m-4 0;
+}
+
+
+
+
+

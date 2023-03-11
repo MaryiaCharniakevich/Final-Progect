@@ -1,0 +1,39 @@
+.navbar {
+    position: absolute;
+    margin-left: 9rem;
+
+    &__list {
+        list-style: none;
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    &__link {
+        text-decoration: overline;
+        color: white;
+        font-size: 14px;
+    
+        transition: all .5s;
+}
+
+}
+
+// .a:hover {
+//     @include transition();
+//     cursor: pointer;
+//     border-bottom: 1px solid $color-pink;
+//     color:  $color-pink;
+//     text-decoration: none;
+// }
+
+// .back {
+//     color: $color-pink;
+  
+//     &:hover {
+//       color: $color-violet--darken;
+//       border-bottom: 1px solid $color-violet--darken;
+//     }
+//   }
+
+
+
